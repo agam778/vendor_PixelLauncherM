@@ -15,12 +15,12 @@
 # limitations under the License.
 
 # Copy permission files
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/product/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/system_ext/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncherM/Prebuilts/product/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncherM/Prebuilts/system_ext/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
 
 # Copy other files
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/etc/security/cacerts,$(TARGET_COPY_OUT_ETC)/security/cacerts)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/bin,$(TARGET_COPY_OUT_BIN))
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncherM/Prebuilts/etc/security/cacerts,$(TARGET_COPY_OUT_ETC)/security/cacerts)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncherM/Prebuilts/bin,$(TARGET_COPY_OUT_BIN))
 
 # Properties
 PRODUCT_SYSTEM_PROPERTIES += \
