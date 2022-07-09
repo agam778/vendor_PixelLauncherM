@@ -16,8 +16,11 @@
 
 # Copy permission files
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/product/etc,$(TARGET_COPY_OUT_PRODUCT)/etc)
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/product/priv-app/PixelLauncherMods/lib/arm64,$(TARGET_COPY_OUT_PRODUCT)/priv-app/PixelLauncherMods/lib/arm64)
 PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/system_ext/etc,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc)
+
+# Copy other files
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/etc/security/cacerts,$(TARGET_COPY_OUT_ETC)/security/cacerts)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/PixelLauncher/Prebuilts/bin,$(TARGET_COPY_OUT_BIN))
 
 # Properties
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -25,10 +28,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 
 # GoogleCamera-Parrot
 PRODUCT_PACKAGES += \
-   IconsOverlayRemover \
    NexusLauncherReleaseMod \
-   PixelLauncherMods \
-   PixelLauncherModsOverlay \
    PixelRecentsProviderMod \
    PixelThemesStubMod \
    QuickAccessWalletMod \
